@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,26 +25,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="G8c-sa-t9M" appends="YES" id="Lhn-Im-dpA"/>
+                                    <outletCollection property="gestureRecognizers" destination="RpM-cn-GBZ" appends="YES" id="VfZ-nR-cjx"/>
                                 </connections>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0e-ou-Mh4" customClass="RoundedScroll" customModule="View_Only" customModuleProvider="target">
-                                <rect key="frame" x="687" y="288" width="218" height="307"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T0e-ou-Mh4" customClass="RoundedScroll" customModule="View_Only" customModuleProvider="target">
+                                <rect key="frame" x="430" y="147" width="220" height="310"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ9-Jd-SsY">
-                                        <rect key="frame" x="0.0" y="45" width="218" height="21"/>
+                                        <rect key="frame" x="0.0" y="45" width="220" height="22"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQm-98-o38">
-                                        <rect key="frame" x="12" y="74" width="194" height="1"/>
+                                        <rect key="frame" x="12" y="75" width="196" height="1"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jgB-vu-14r">
-                                        <rect key="frame" x="12" y="83" width="194" height="30"/>
+                                        <rect key="frame" x="12" y="84" width="196" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
@@ -56,14 +55,14 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INPUT YOUR BOOK CODE HERE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01f-NV-KBj">
-                                        <rect key="frame" x="12" y="121" width="194" height="21"/>
+                                        <rect key="frame" x="12" y="122" width="196" height="21"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="9"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uV-gW-dVH">
-                                        <rect key="frame" x="13" y="148" width="58" height="30"/>
+                                        <rect key="frame" x="13" y="150" width="59" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
@@ -73,7 +72,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtP-hS-nR3">
-                                        <rect key="frame" x="81" y="148" width="58" height="30"/>
+                                        <rect key="frame" x="82" y="150" width="58" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
@@ -83,7 +82,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71e-bl-WfX">
-                                        <rect key="frame" x="149" y="148" width="58" height="30"/>
+                                        <rect key="frame" x="150" y="150" width="59" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
@@ -93,21 +92,21 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeM-vw-G24">
-                                        <rect key="frame" x="0.0" y="179" width="218" height="21"/>
+                                        <rect key="frame" x="0.0" y="181" width="220" height="21"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="9"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCAN QR CODE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVN-pm-X6G">
-                                        <rect key="frame" x="0.0" y="253" width="218" height="16"/>
+                                        <rect key="frame" x="0.0" y="255" width="220" height="17"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="9"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUw-y0-hOp">
-                                        <rect key="frame" x="8" y="272" width="69" height="30"/>
+                                        <rect key="frame" x="8" y="275" width="69" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
                                         <state key="normal" title="CANCEL">
@@ -118,7 +117,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL7-xc-cjj">
-                                        <rect key="frame" x="143" y="272" width="69" height="30"/>
+                                        <rect key="frame" x="145" y="275" width="69" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
                                         <state key="normal" title="    SAVE">
@@ -126,7 +125,7 @@
                                         </state>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3dd-Ug-tZf" customClass="RoundedView" customModule="View_Only" customModuleProvider="target">
-                                        <rect key="frame" x="84" y="201" width="50" height="50"/>
+                                        <rect key="frame" x="85" y="203" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
@@ -139,7 +138,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7q-Gv-Al4" customClass="RoundedButton" customModule="View_Only" customModuleProvider="target">
-                                        <rect key="frame" x="98" y="15" width="22" height="22"/>
+                                        <rect key="frame" x="99" y="15" width="22" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.88454696690000001" blue="0.16236483639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="whitebutton"/>
@@ -175,22 +174,15 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vou-xK-cGY" secondAttribute="bottom" id="3VB-jr-Kp3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="T0e-ou-Mh4" secondAttribute="trailing" constant="99" id="Ea7-Yt-fJ2"/>
                             <constraint firstItem="Vou-xK-cGY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qz5-Bb-GxK"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T0e-ou-Mh4" secondAttribute="bottom" constant="173" id="TrV-sa-X8H"/>
-                            <constraint firstItem="T0e-ou-Mh4" firstAttribute="width" secondItem="Vou-xK-cGY" secondAttribute="width" multiplier="0.213" id="XdI-45-Di4"/>
-                            <constraint firstItem="T0e-ou-Mh4" firstAttribute="height" secondItem="Vou-xK-cGY" secondAttribute="height" multiplier="0.4" id="oQH-dN-ISO"/>
                             <constraint firstAttribute="trailing" secondItem="Vou-xK-cGY" secondAttribute="trailing" id="w2O-6d-RZg"/>
                             <constraint firstItem="Vou-xK-cGY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y3O-7x-2hg"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="G8c-sa-t9M" appends="YES" id="nwo-3A-Cq6"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="ScrollView" destination="T0e-ou-Mh4" id="5In-av-Guc"/>
                         <outlet property="addbookTextField" destination="jgB-vu-14r" id="hfV-cO-hjd"/>
-                        <outlet property="bigGesture" destination="G8c-sa-t9M" id="hEh-Hb-Hib"/>
+                        <outlet property="bigGesture" destination="RpM-cn-GBZ" id="zb3-Xj-WIZ"/>
                         <outlet property="codeoneTextField" destination="9uV-gW-dVH" id="rjL-Tu-yag"/>
                         <outlet property="codethreeTextField" destination="71e-bl-WfX" id="XkU-LR-WJC"/>
                         <outlet property="codetwoTextField" destination="qtP-hS-nR3" id="Fmb-Oa-eUJ"/>
@@ -198,14 +190,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="G8c-sa-t9M">
-                    <connections>
-                        <action selector="bigTapGesture:" destination="BYZ-38-t0r" id="YlP-7X-pYd"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <tapGestureRecognizer id="xAY-fM-ets">
                     <connections>
                         <action selector="smallTapGesture:" destination="BYZ-38-t0r" id="XwC-qs-XU3"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="RpM-cn-GBZ">
+                    <connections>
+                        <action selector="bigTapGesture:" destination="BYZ-38-t0r" id="gPU-El-3SM"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

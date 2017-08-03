@@ -24,15 +24,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var fixScreenWidth: Int = 0
     var tempScreenHeight: Int = 0
     var tempScreenWidth: Int = 0
+    var initialConstraints = [NSLayoutConstraint]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getScreenSize()
-        //ScrollView.frame = (tempScreenWidth / 4)
         
-        //ScrollView.updateConstraints()
-        print(ScrollView.frame)
+        ScrollView.translatesAutoresizingMaskIntoConstraints = false
+        let topConstraint = ScrollView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 250)
+        let leadingConstraint = ScrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 650)
+        let trailingConstraint = ScrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -130)
+        let bottomConstraint = ScrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -173)
         
+        initialConstraints.append(contentsOf: [topConstraint, leadingConstraint, trailingConstraint, bottomConstraint])
+        NSLayoutConstraint.activate(initialConstraints)
     }
     
     override var shouldAutorotate: Bool {
@@ -41,6 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
         return .landscape
     }
+    
     
     @IBAction func bigTapGesture(_ sender: Any) {
         self.view.endEditing(true)
@@ -86,8 +92,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let screenHeight = screenSize.height
         tempScreenHeight = Int(screenHeight)
         tempScreenWidth = Int(screenWidth)
-
-        print(screenWidth, screenHeight)
+        
+        ScrollView.frame.size.width = screenWidth / 4.65
+        ScrollView.frame.size.height = screenHeight / 2.47
     }
     
     func moveView(textField: UITextField, moveDistance: Int, up: Bool){
